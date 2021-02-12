@@ -1,6 +1,6 @@
-# Frontend Mentor - Profile card component
+# Frontend Mentor - Profile card
 
-
+Profile card challenge for Frontend Mentor
 
 ### Challenge Difficulty
 * Newbie
