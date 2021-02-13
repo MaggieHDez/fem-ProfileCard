@@ -1,0 +1,63 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 300;
+    font-size: $font-lrg;
+    color: $vDarkDesBlue;
+    line-height: 1.3;
+    background: $darkCyan;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+    transition: ease-in-out 300ms;
+    background-repeat: no-repeat, no-repeat;
+}
+
+//resizing for mobile
+@include breakpoint-down(medium) {
+    //1023px
+    .container {
+        background-position: -396px -704px, 398px 305px;
+    }
+}
+
+//resizing for desktop
+@include breakpoint-up(large) {
+    //1024px
+    .container {
+        background-position: -300px -580px, 642px 339px;
+    }
+}
