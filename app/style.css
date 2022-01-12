@@ -121,7 +121,8 @@ p {
 }
 
 .profileCard__middle .age {
-  color: #6a6f81;
+  color: #e00b0b;
+  /*$darkGrayishBlue*/
 }
 
 .profileCard__middle #city {
